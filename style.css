@@ -4,15 +4,20 @@
     padding: 0;
     box-sizing: 0;
 }
-.logo-img {
 
+body {
+    max-width: 1440px;
 }
 header {
+    border: 3px solid #0f8000;
     display:flex;
     justify-content:space-between;
     align-items: center;
     padding: 20px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
+
 .logo-box {
     display:flex;
     align-items: center;
@@ -80,14 +85,16 @@ header {
 .right {
     width: 760px;
     height: 530;
-    no-repeat;
     margin-left: 55px;
+}
+.right-image {
+    height: 420px;
 }
 .services {
     margin: 60px 40px;
 }
 .ourservice {
-    font-size: 28px;
+    font-size: 1.5em;
     text-align: center;
     font-family: lucida sans;
     color: #3071c9;
@@ -112,27 +119,7 @@ header {
     justify-content: space-between;
     box-shadow: 0 0 10px;
 }
-.coversecond {
-    border: 1px solid #747f8e;
-    width: 350px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 10px;
-    
-}
-.coverthird {
-    border: 1px solid #747f8e;
-    width: 350px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 10px;
-}
+
 .home-logo {
     height: 80px;
     border: 2px solid #3071c9;
@@ -140,20 +127,7 @@ header {
     border-radius: 65px;
     margin-top: 40px;
 }
-.hand-home-logo {
-    height: 80px;
-    border: 2px solid #3071c9;
-    padding: 25px;
-    border-radius: 65px;
-    margin-top: 40px;
-}
-.hand-shake-logo {
-    height: 80px;
-    border: 2px solid #3071c9;
-    padding: 25px;
-    border-radius: 65px;
-    margin-top: 40px;
-}
+
 .big-cover-text {
     font-size: 30px;
     font-family: lucida sans;
@@ -174,8 +148,8 @@ header {
     color: rgb(99, 247, 7);
     font-style: italic;
 }
-.listeddiv {
-    margin: 70px 40px;
+.listed-div {
+    margin: 70px auto 30px;
 }
 .listed {
     font-size: 28px;
@@ -183,7 +157,7 @@ header {
     font-family: lucida sans;
     color: #3071c9;
     font-weight: 600;
-    letter-spacing: 2px;
+    
 }
 .new-section {
     display: flex;
@@ -191,7 +165,7 @@ header {
     align-items: center;
     width: 1100px;
     height: 400px;
-    margin: 80px auto 100px;
+    margin: 0 auto 50px;
 
 }
 .dub-box {
@@ -356,6 +330,10 @@ header {
     height: 280px;
     margin: 0 0 30px;
 }
+.blog-pics {
+    height: 278px;
+    
+}
 .big-blog-text {
     color: #3071c9;
     font-weight: 600;
@@ -407,8 +385,8 @@ header {
 .ellipse {
     height: 120px;
     margin-top: 40px;
-    m
 }
+
 .name-text {
     font-family: Verdana;
     font-size: 20px;
@@ -512,4 +490,374 @@ footer {
 .small-icons {
     height: 20px;
     margin-right: 10px;
+}
+
+@media only screen and (max-width: 426px) {
+    
+    body {
+        max-width: 425px;
+        padding: 5px 10px;
+    }
+    header {
+        /* border: 3px solid #0f8000; */
+        display: block;
+        margin: 0 auto;
+        padding-left: 0 10px;
+               
+    }
+    .logo-img {
+        height: 40px;
+    }
+    .links {
+        /* border: 1px solid red; */
+        display: block;
+        color: #ffffff;
+        background-color: #3071c9;
+        max-width: 100%;
+        margin: 3px 0;
+        font-size: 0.8rem;
+        border-radius: 8px;
+        padding: 5px 13px;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        height: 480px;
+        background-color: #ceedfc6e;
+        margin: 0 auto;
+        box-shadow: 0 0 8px;
+        border-radius: 20px;
+        
+    }
+    .left {
+        /* border: 1px solid #0f8000; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 90%;
+        margin-left: 15px;
+    }
+    .hero-big-text {
+        font-size: 2.0rem;
+        font-weight: bolder;
+        font-family: Verdana;
+        margin-bottom: 20px;
+        width: 100%;
+        
+    }
+    .hero-small-text {
+        font-size: 1rem;
+        font-family: tahoma;
+        padding: 15px 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .right {
+        /* border: 2px solid green; */
+        width: 100%;
+        height: 210px;
+        margin: 20px 0;
+    }
+    .right-image {
+        width: 100%;
+        height: 90%;
+        border-radius: 10px;
+        margin: 3px 0;
+    }
+    .services {
+        margin: 60px 40px 20px;
+    }
+    .ourservice {
+        font-size: 1em;
+        text-align: center;
+        font-family: lucida sans;
+        color: #3071c9;
+        font-weight: 600;
+        letter-spacing: 5px;
+    }
+    .cover {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    height: 900px;
+    margin: 0 auto 30px;
+    }
+    .coverfirst {
+        border: 1px solid #747f8e;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 8px;
+        margin: 5px auto;
+    }
+    .home-logo {
+        height: 20%;
+        border: 2px solid #3071c9;
+        padding: 25px;
+        border-radius: 65px;
+        margin-top: 20px;
+    }
+    .big-cover-text {
+        font-size: 1.2em;
+        font-family: lucida sans;
+        font-weight: 500;
+    }
+    .small-cover-text {
+    font-size: 0.8em;
+    margin: 0 40px;
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    }
+    .listed {
+        font-size: 1rem;
+        letter-spacing: none;
+    }
+    .new-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1100px;
+        height: 400px;
+        margin: 0 auto 50px;
+    }
+    .new-section {
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        height: 900px;
+        margin: 0 auto 50px;
+    
+    }
+    .dub-box {
+        border: 1px solid #747f8e;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-shadow: 0 0 10px;
+        margin: 10px auto;
+        
+    }
+    .dub {
+        /* border: 1px solid #747f8e; */
+        width: 100%;
+        height: 190px;
+        margin: 15px auto 0;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .bud2 {
+        /* border: 1px solid #747f8e; */
+        width: 85%;
+        height: 160px;
+        
+        
+    
+    }
+    .dubimg {
+        width: 90%;
+        height: 100%;
+               
+    }
+    .location-text {
+        font-family: lucida sans;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+    
+    
+    .location-icon {
+        height: 20px
+    }
+    .dub-icon {
+        height: 20px;
+       
+    }
+    .icon-div {
+        /* border: 1px solid #0c0e11; */
+        width: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }.mini-div {
+        /* border: 1px solid #747f8e; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40px;
+        margin: 0 3px;
+    
+    }
+    .mini-divbig {
+        /* border: 1px solid #747f8e; */
+        width: px;
+        display: flex;
+        margin-left: 10px;
+        display:flex;
+    }
+   
+    .dub-link {
+        font-family: tahoma;
+        padding-bottom: 35px;
+    }
+    .dub-link {
+        font-family: tahoma;
+        padding-bottom: 35px;
+        
+    }
+    .see-all-div {
+        margin: 100px auto 30px;
+        /* border: 1px solid #3071c9; */
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .see-all {
+        font-size: 0.9rem;
+        font-family: tahoma;
+        color: #3071c9;
+         
+    }
+    .see-all-divs {
+        border: 2px solid #3071c9;
+        width: 110px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10pc;
+        margin: 0 auto 20px;
+    }
+    .our-blog {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: lucida sans;
+        color: #3071c9;
+        font-weight: 600;
+        text-decoration: none;
+        
+        
+    }
+    .blog-section {
+        /* border: 1px solid grey; */
+        width: 100%;
+        height: 950px;
+        margin: 0 auto 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .blog-div {
+        border: 1px solid grey;
+        width: 100%;
+        height: 450px;
+        box-shadow: 0 0 15px;
+        border-radius: 10px;
+    }
+    .blog-photo {
+        width: 100%;
+        height: 200px;
+        
+    }
+    .blog-pics {
+        height: 200px;
+        width: 100%;
+        border-radius: 8px;
+    }
+    .big-blog-text {
+        color: #3071c9;
+        font-weight: 600;
+        font-size: 1.2rem;
+        font-family: lucida sans;
+    }
+    .small-blog-text {
+        color: #747f8e;
+        font-size: 1rem;
+        font-family: tahoma;
+    }
+    .blog-text {
+        /* border: 1px solid black; */
+        height: 200px;
+        
+    }
+    .blog-link {
+        color: #3071c9;
+        font-weight: 600;
+        font-size: 1.3rem;
+        font-family: lucida sans;
+    }
+    .review {
+        font-size: 1.2rem;
+        text-align: center;
+        font-family: lucida sans;
+        color: #3071c9;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }   
+    .client-review {
+        border: 1px solid #747f8e;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px;
+        margin: 10px auto; 
+    }
+    .ellipse {
+        height: 90px;
+        margin-top: 10px;
+    }
+    .name-text {
+        font-family: Verdana;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .occupation {
+        font-family: Verdana;
+        color: #747f8e;
+        font-size: 0.9rem;
+    
+    }
+    .star {
+        height: 15px;
+        width: 100%;
+        /* border: 1px solid black; */
+        margin: 5px 0 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .description {
+        font-family: Verdana;
+        color: #747f8e;
+        font-size: 0.9rem;
+        text-align: center;
+    }   
+    footer {
+        border: 1px solid black;
+        margin: 50px auto 0;
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #3071c9;
+        padding: 30px 0;
+    }
 }
