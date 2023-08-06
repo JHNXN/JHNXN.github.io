@@ -9,7 +9,7 @@ body {
     max-width: 1440px;
 }
 header {
-    border: 3px solid #0f8000;
+    /* border: 3px solid #0f8000; */
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -499,11 +499,10 @@ footer {
         padding: 5px 10px;
     }
     header {
-        /* border: 3px solid #0f8000; */
         display: block;
         margin: 0 auto;
         padding-left: 0 10px;
-               
+                      
     }
     .logo-img {
         height: 40px;
